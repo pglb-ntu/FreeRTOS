@@ -52,6 +52,12 @@
 
 /*-----------------------------------------------------------*/
 
+#if defined(__freertos__)
+extern BaseType_t xApplicationGetRandomNumber( uint32_t * pulNumber );
+#endif
+
+/*-----------------------------------------------------------*/
+
 /**
  * @brief Allocates memory for an array of members.
  *
