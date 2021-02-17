@@ -52,3 +52,6 @@
 [submodule "FreeRTOS-Plus/ThirdParty/tinycbor"]
 	path = FreeRTOS-Plus/ThirdParty/tinycbor
 	url = https://github.com/intel/tinycbor.git
+[submodule "FreeRTOS/Demo/RISC-V_Galois_demo"]
+	path = FreeRTOS/Demo/RISC-V_Galois_demo
+	url = https://github.com/DARPA-SSITH-Demonstrators/RISC-V_Galois_demo.git
