@@ -39,13 +39,13 @@
 	url = https://github.com/wolfSSL/wolfssl.git
 [submodule "FreeRTOS/Demo/RISC-V-Generic"]
 	path = FreeRTOS/Demo/RISC-V-Generic
-	url = https://github.com/CTSRD-CHERI/FreeRTOS-Demos-CHERI-RISC-V.git
+	url = https://github.com/pglb-ntu/FreeRTOS-Demos-CHERI-RISC-V.git
 [submodule "FreeRTOS-Labs"]
 	path = FreeRTOS-Labs
 	url = https://github.com/CTSRD-CHERI/FreeRTOS-Labs.git
 [submodule "FreeRTOS/Source"]
 	path = FreeRTOS/Source
-	url = https://github.com/CTSRD-CHERI/FreeRTOS-Kernel.git
+	url = https://github.com/pglb-ntu/FreeRTOS-Kernel.git
 [submodule "FreeRTOS-Plus/Source/aws-ota"]
 	path = FreeRTOS-Plus/Source/aws-ota
 	url = https://github.com/aws/OTA-for-AWS-IoT-embedded-SDK
@@ -54,4 +54,4 @@
 	url = https://github.com/intel/tinycbor.git
 [submodule "FreeRTOS/Demo/RISC-V_Galois_demo"]
 	path = FreeRTOS/Demo/RISC-V_Galois_demo
-	url = https://github.com/CTSRD-CHERI/RISC-V_Galois_demo.git
+	url = https://github.com/pglb-ntu/RISC-V_Galois_demo.git
