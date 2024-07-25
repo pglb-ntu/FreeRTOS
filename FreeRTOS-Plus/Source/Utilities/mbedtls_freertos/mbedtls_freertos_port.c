@@ -52,6 +52,12 @@
 
 /*-----------------------------------------------------------*/
 
+#if defined(__freertos__)
+extern BaseType_t xApplicationGetRandomNumber( uint32_t * pulNumber );
+#endif
+
+/*-----------------------------------------------------------*/
+
 /**
  * @brief Allocates memory for an array of members.
  *
@@ -298,7 +304,14 @@ int mbedtls_platform_entropy_poll( void * data,
                                    size_t * olen )
 {
     int status = 0;
-    NTSTATUS rngStatus = 0;
+    #if defined(__freertos__)
+        BaseType_t rngStatus = 0;
+        int rnd = 0;
+    #elif defined(_WIN32)
+        NTSTATUS rngStatus = 0;
+    #else
+        #error "mbedtls: Unknown platform to generate a RNG for"
+    #endif
 
     configASSERT( output != NULL );
     configASSERT( olen != NULL );
@@ -306,10 +319,14 @@ int mbedtls_platform_entropy_poll( void * data,
     /* Context is not used by this function. */
     ( void ) data;
 
-    /* TLS requires a secure random number generator; use the RNG provided
-     * by Windows. This function MUST be re-implemented for other platforms. */
-    rngStatus =
-        BCryptGenRandom( NULL, output, len, BCRYPT_USE_SYSTEM_PREFERRED_RNG );
+    /* TLS requires a secure random number generator */
+    #if defined(__freertos__)
+        if ( xApplicationGetRandomNumber( &rnd ) == pdFALSE )
+            rngStatus = -1;
+    #elif defined(_WIN32)
+        /* Use the RNG provided by Windows. */
+        rngStatus = BCryptGenRandom( NULL, output, len, BCRYPT_USE_SYSTEM_PREFERRED_RNG );
+    #endif
 
     if( rngStatus == 0 )
     {

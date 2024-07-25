@@ -1,12 +1,9 @@
-[submodule "FreeRTOS/Source"]
-	path = FreeRTOS/Source
-	url = https://github.com/FreeRTOS/FreeRTOS-Kernel.git
 [submodule "FreeRTOS/Test/CMock/CMock"]
 	path = FreeRTOS/Test/CMock/CMock
 	url = https://github.com/ThrowTheSwitch/CMock.git
 [submodule "FreeRTOS-Plus/Source/FreeRTOS-Plus-TCP"]
 	path = FreeRTOS-Plus/Source/FreeRTOS-Plus-TCP
-	url = https://github.com/FreeRTOS/FreeRTOS-Plus-TCP
+	url = https://github.com/CTSRD-CHERI/FreeRTOS-Plus-TCP.git
 [submodule "FreeRTOS-Plus/Source/AWS/device-shadow"]
 	path = FreeRTOS-Plus/Source/AWS/device-shadow
 	url = https://github.com/aws/device-shadow-for-aws-iot-embedded-sdk
@@ -40,3 +37,21 @@
 [submodule "FreeRTOS-Plus/ThirdParty/wolfSSL"]
 	path = FreeRTOS-Plus/ThirdParty/wolfSSL
 	url = https://github.com/wolfSSL/wolfssl.git
+[submodule "FreeRTOS/Demo/RISC-V-Generic"]
+	path = FreeRTOS/Demo/RISC-V-Generic
+	url = https://github.com/pglb-ntu/FreeRTOS-Demos-CHERI-RISC-V.git
+[submodule "FreeRTOS-Labs"]
+	path = FreeRTOS-Labs
+	url = https://github.com/CTSRD-CHERI/FreeRTOS-Labs.git
+[submodule "FreeRTOS/Source"]
+	path = FreeRTOS/Source
+	url = https://github.com/pglb-ntu/FreeRTOS-Kernel.git
+[submodule "FreeRTOS-Plus/Source/aws-ota"]
+	path = FreeRTOS-Plus/Source/aws-ota
+	url = https://github.com/aws/OTA-for-AWS-IoT-embedded-SDK
+[submodule "FreeRTOS-Plus/ThirdParty/tinycbor"]
+	path = FreeRTOS-Plus/ThirdParty/tinycbor
+	url = https://github.com/intel/tinycbor.git
+[submodule "FreeRTOS/Demo/RISC-V_Galois_demo"]
+	path = FreeRTOS/Demo/RISC-V_Galois_demo
+	url = https://github.com/pglb-ntu/RISC-V_Galois_demo.git
