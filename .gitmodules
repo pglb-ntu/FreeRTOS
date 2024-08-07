@@ -42,7 +42,7 @@
 	url = https://github.com/pglb-ntu/FreeRTOS-Demos-CHERI-RISC-V.git
 [submodule "FreeRTOS-Labs"]
 	path = FreeRTOS-Labs
-	url = https://github.com/CTSRD-CHERI/FreeRTOS-Labs.git
+	url = https://github.com/pglb-ntu/FreeRTOS-Labs.git
 [submodule "FreeRTOS/Source"]
 	path = FreeRTOS/Source
 	url = https://github.com/pglb-ntu/FreeRTOS-Kernel.git
